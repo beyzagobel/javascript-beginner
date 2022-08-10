@@ -17,12 +17,18 @@ console.log(a+b);
 var b =4;
 
 
+
+console.log(fname);  // undifined
+var fname = "beyza"
+
+
+
 // JavaScript var anahtar kelimesi için hoisting uygularken let ve const için aynı özellik geçerli değildir.
 
 
 l = 5;
 console.log(l);
-let l ;
+let l ;  // hata
 
 
 // Mümkün olduğunca deklarasyonları en başta yapmak akıllıca olur.
