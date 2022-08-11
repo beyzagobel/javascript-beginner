@@ -1,0 +1,5 @@
+let greating = document.querySelector("#greating")
+
+greating.classList.add("text-primary")  // class = "text-primary" diye eklenir
+
+console.log(greating.classList)
