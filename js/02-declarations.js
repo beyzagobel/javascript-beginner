@@ -3,6 +3,13 @@ Declaration : Değişken oluşturma. Değer atamadan sadece değişken oluşturm
 Değişken oluşturduğumuzda ve bir değer atamadığımızda değişkenin değeri default olara undefined atanır.
 
 Initialization : Bir değişkene ilk değer ataması işlemine denir.
+
+Değişken adlandırırken :
+ 1 - snake_case
+     var  ders_adi;
+
+2 - camelCase
+    var dersAdi;
 */
 
 
@@ -23,13 +30,18 @@ var fName = "Beyza";
 
 console.log(fName);
 
-// Hoisting 
+// Hoisting : var ile tanımlanan değişkenlerde ve fonksiyonlar tanımlanmadan önce çağrılabilir
 
 number = 21;
 console.log(number);
 var number;
 
-// 2- let ile DEĞİŞKEN TANIMLAMA , BLOCK SCOPE {}
+merhaba();
+function merhaba(){
+    console.log("Merhaba");
+}
+
+// 2- let ile DEĞİŞKEN TANIMLAMA , Blet ile oluşturulan bir değişken sadece oluşturulduğu yerdekisüslü parantezler içerisinde erişilebilir
 
 
 // değişken tekrar tanımlanamaz fakat değeri güncellenebilir
@@ -49,9 +61,32 @@ let number2;    Not defined
 */
 
 
-// const ile DEĞİŞKEN TANIMLAMA : const tanımlandığı yerde initial edilmeli ve sonradan değeri değiştirilemez
+// const ile DEĞİŞKEN TANIMLAMA : const tanımlandığı yerde initial edilmeli ve değişkenin sonradan değeri değiştirilemez (immutable)
 
 // HATALI KULLANIM: const number3;  
 
 const number3 = 32;
 // number3 =23;  HATA : Assignment to constant variable
+
+
+// Bir nesne içerisinde bir özelliği değiştirmek veya özellik eklemek,
+// tekrar atama yapmak değildir. Immutable durumu, oluşturulan nesnenin 
+// kendisine yeni bir değer ataması yapılamaması durumdur.
+
+const colors = ["red","green","blue"];
+console.log(colors[0]);  // red
+colors[0] = "yellow";
+console.log(colors[0]);  // yellow
+
+const person ={
+    fName : "beyza",
+    lName : "gobel"
+}
+console.log(person.fName);  // beyza
+person.fName = "Beyza";
+console.log(person.fName);  // Beyza
+
+person = {};  // Assignment to constant variable.
+
+
+// Dikkat Edilmesi Gerekenler
