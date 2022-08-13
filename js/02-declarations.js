@@ -5,11 +5,12 @@ Değişken oluşturduğumuzda ve bir değer atamadığımızda değişkenin değ
 Initialization : Bir değişkene ilk değer ataması işlemine denir.
 
 Değişken adlandırırken :
- 1 - snake_case
-     var  ders_adi;
-
-2 - camelCase
+1 - camelCase
     var dersAdi;
+
+2 - UPPER_CASE , const tanımları
+    var SERVER_NAME;
+    
 */
 
 
@@ -89,4 +90,5 @@ console.log(person.fName);  // Beyza
 person = {};  // Assignment to constant variable.
 
 
-// Dikkat Edilmesi Gerekenler
+let isActive = true;
+let hasPassword = false;

@@ -2,6 +2,8 @@
  Scope : Uygulamadaki değişkenlerin ve fonksiyonların nerelerde erişilebilir,
  nerelerde erişilemez olduklarını belirler.
 
+ var function scope, let ve const block scope özelliğe sahiptir.
+
 */
 
 // Global Scope : Değişkenler, fonksiyonlar içerisinden de erişilebilir.
@@ -86,3 +88,13 @@ console.log(window.test);
 
 let test2 = "test2";
 console.log(window.test2);  // undefined
+
+
+/*
+ * Dikkat Edilmesi Gerekenler
+ * 1 - Bir block scope içerisinde var keyword'ü kullanmak değişkenin scope dışına sızmasına yol açar buda istenmeyen bir durumdur.
+ * 2 - let ve const block scope da kullanılmalıdır
+ * 3 - Global olarak var ile tanımlanan bir değişkeni, fonksiyon içerisinde tekrar tanımlayıp yeni bir değer atamak, globalde bulunan değişkenin değerinin de değişmesine sebep olur.
+ * 4- let ve const block scope özellikte oldukları için, greeting, yer aldığı scope’a göre farklı değer gösterir.
+ */
+
