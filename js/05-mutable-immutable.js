@@ -1,8 +1,8 @@
+
 // Primitive Types : Değer bazlı tiplerdir, değerleri turarlar ki buda değer değişdiğinde diğerini değişmesini engeller (immutable)/
 
 /*Immutable tipler, mutable tiplerden daha performanslıdır. Yani daha hızlı çalışırlar.
 Çünkü önceki değerler ile ilgili bir kontrol yapmaz ve veriyi direk ram'de bulduğu boş alana yazar.
-
 */
 let a = 5 ; 
 let b = a ;   // a'nın bellekte bir koyası oluşur ve bunu b referans eder
@@ -33,6 +33,9 @@ var x = {
     x:1
 }
 var y = x;
+
+console.log(x === y);   // true
+
 console.log(x.x);  // 1
 console.log(y.x);  // 1
 
