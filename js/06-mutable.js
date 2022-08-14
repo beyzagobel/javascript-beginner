@@ -16,25 +16,27 @@ const newPerson = {
     lastname : "Gobel"
 }
 
+console.log(person == newPerson);   // false
+
 console.log(person);
 console.log(newPerson);
 
 // 2- Object.assign() : Orjinal nesne korunur ve değişikliker yeni nesnede  uygulanır falar performans açısından iyi bir pratik değildir.
 
 let obj = {
-    a: 1,
-    b: 2
+    name :"Robert"
 }
 
-let copyObj = Object.assign({}, obj);
+let copyObj = Object.assign({name:"Wayne"}, obj);
 
-console.log(copyObj);   // a:1 , b:2
+console.log(obj === copyObj);   // false
+// a:1 , b:2
 
-copyObj.a = 5;
+copyObj.name = "Drek";
 
-console.log(obj);   // a:1 b:2
+console.log(obj);   
 
-console.log(copyObj);  // a:5  b:2
+console.log(copyObj);  
 
 
 // 3- Object.freeze() : Nesne tamamen değişmez yapılabilir. Deep copy özelliktedir. Maliyetlidir.
