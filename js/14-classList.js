@@ -25,3 +25,11 @@ liDOM.innerHTML = "Kendi oluşturduğumuz Oge";
 // elemnı listeye ekledk
 ulDOM.append(liDOM);  // en sona ekler
 ulDOM.prepend(liDOM);  // en başa ekler
+
+
+// CSS class eklemek veya çıkarmak
+
+let list = document.querySelector("ul#list");
+list.classList.add("text-primary");
+
+list.classList.remove("text-primary");

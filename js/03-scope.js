@@ -32,7 +32,7 @@ console.log(date); // date is not defined HATA!
 function getDate2(){
     var date = new Date();
 
-    function modifyDate(){
+    function modifyDate(){   // closure
         return date.toDateString();
     }
     return modifyDate();
