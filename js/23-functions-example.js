@@ -15,9 +15,11 @@ function clickEvenet(){
     console.log(this.id);
    if( this.id=="artir"){
     counterDOM.innerHTML = ++counter;
+    localStorage.setItem("counter",counter);
    } 
    else{
     counterDOM.innerHTML = --counter;
+    localStorage.setItem("counter",counter);
 
    }
 

@@ -1,0 +1,17 @@
+var sports = ["basketball","football","tennis"];
+
+console.log(sports);
+
+sports.push("baseball");   // dizinin sonuna eleman ekler
+
+sports.unshift("dnemee"); // dininn başına eleman ekler
+
+sports.splice(1,0,"2.eklendi");
+
+
+let a = sports.pop(); // dizinin en son elemanını siler
+
+sports.shift();  // dizinin başındaki elemanı siler
+
+sports.includes("varmı");
+
